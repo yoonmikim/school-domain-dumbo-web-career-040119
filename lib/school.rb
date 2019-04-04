@@ -10,4 +10,5 @@ class School
     self.roster[grade] = []
     self.roster << name
   end
+  
 end
