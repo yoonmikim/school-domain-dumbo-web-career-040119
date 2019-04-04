@@ -7,20 +7,20 @@ class School
   end
   
   def add_student(name, grade)
-    if self.roster[grade] == nil 
-      self.roster[grade] = []
-      self.roster << name
+    if @roster[grade] == nil 
+      @roster[grade] = []
+      @roster << name
     else
-      self.roster[grade] << name
+      @roster[grade] << name
     end
   end
   
   def grade(n)
-    self.roster[grade]
+    @roster[grade]
   end
   
   def sort
-    self.roster[grade].map { |i| i.sort }
+    @roster[grade].map { |i| i.sort }
   end
   
 end
