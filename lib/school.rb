@@ -21,7 +21,7 @@ class School
   end
   
   def sort
-    roster[grade].map { |i| i.sort }
+    roster[grade] = roster[grade].map { |i| i.sort }
   end
   
 end
