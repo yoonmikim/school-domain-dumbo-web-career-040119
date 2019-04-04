@@ -22,7 +22,7 @@ class School
   
   def sort
     sorted = roster.map { |k, v| roster[grade] = roster[k].sort }
-   sorted
+   roster
   end
   
 end
