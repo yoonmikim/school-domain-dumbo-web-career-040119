@@ -7,8 +7,12 @@ class School
   end
   
   def add_student(name, grade)
-    self.roster[grade] = []
-    self.roster << name
+    if self.roster[grade] == nil 
+      self.roster[grade] = []
+      self.roster << name
+    else
+      self.roster[grade] << name
+    end
   end
   
 end
