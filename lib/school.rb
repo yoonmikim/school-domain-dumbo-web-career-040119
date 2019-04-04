@@ -20,7 +20,7 @@ class School
   end
   
   def sort
-    self.roster[grade].sort
+    self.roster[grade].map { |i| i.sort }
   end
   
 end
