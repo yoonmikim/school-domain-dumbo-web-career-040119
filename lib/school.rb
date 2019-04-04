@@ -12,7 +12,7 @@ class School
       roster[grade] = []
       roster[grade].push(name)
     else
-      roster[grade].push(name)
+      roster[grade] << (name)
     end
   end
   
