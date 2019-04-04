@@ -8,11 +8,11 @@ class School
   end
   
   def add_student(name, grade)
-    if roster[grade] == nil 
+    if roster[grade] == nil
       roster[grade] = []
       roster << name
     else
-      roster[grade] << name
+      roster[grade].push(name)
     end
   end
   
