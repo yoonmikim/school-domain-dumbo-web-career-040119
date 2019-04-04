@@ -19,4 +19,8 @@ class School
     self.roster[grade]
   end
   
+  def sort
+    self.roster[grade].sort
+  end
+  
 end
