@@ -21,8 +21,7 @@ class School
   end
   
   def sort
-    roster.each { |k, v| v = roster[k].sort }
-    roster
+    roster.map { |k, v| v = roster[k].sort }
   end
   
 end
